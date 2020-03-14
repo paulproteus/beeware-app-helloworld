@@ -1,0 +1,47 @@
+[build-system]
+requires = ["briefcase"]
+
+[tool.briefcase]
+project_name = "Hello World"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/helloworld"
+license = "BSD license"
+author = 'Jane Developer'
+author_email = "jane@example.com"
+
+[tool.briefcase.app.helloworld]
+formal_name = "Hello World"
+description = "My first application"
+icon = "src/helloworld/resources/helloworld"
+sources = ['src/helloworld']
+requires = []
+
+
+[tool.briefcase.app.helloworld.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.helloworld.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.helloworld.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev18',
+]
+
+# Mobile deployments
+[tool.briefcase.app.helloworld.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.helloworld.android]
+requires = [
+    'toga-android>=0.3.0.dev18',
+]
+template = "https://github.com/paulproteus/cookiecutter-beeware-android"
+support_package = "https://github.com/paulproteus/Python-Android-support/releases/download/v0.5/3.7.zip"
