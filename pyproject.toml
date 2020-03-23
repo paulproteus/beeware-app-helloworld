@@ -43,5 +43,5 @@ requires = [
 requires = [
     'toga-android>=0.3.0.dev18',
 ]
-template = "https://github.com/paulproteus/cookiecutter-beeware-android"
+template = "https://github.com/beeware/briefcase-android-gradle-template"
 support_package = "https://github.com/paulproteus/Python-Android-support/releases/download/v0.5/3.7.zip"
