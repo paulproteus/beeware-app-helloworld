@@ -2,46 +2,20 @@
 requires = ["briefcase"]
 
 [tool.briefcase]
-project_name = "Hello World"
-bundle = "com.example"
+project_name = "Click button, receive log message"
+bundle = "org.asheesh"
 version = "0.0.1"
-url = "https://example.com/helloworld"
 license = "BSD license"
-author = 'Jane Developer'
-author_email = "jane@example.com"
+author = 'Asheesh Laroia'
+author_email = "asheesh@asheesh.org"
 
-[tool.briefcase.app.helloworld]
+[tool.briefcase.app.click_button_receive_log]
 formal_name = "Hello World"
 description = "My first application"
-icon = "src/helloworld/resources/helloworld"
-sources = ['src/helloworld']
+icon = "src/click_button_receive_log/resources/click_button_receive_log"
+sources = ['src/click_button_receive_log']
 requires = []
 
-
-[tool.briefcase.app.helloworld.macOS]
-requires = [
-    'toga-cocoa>=0.3.0.dev18',
-]
-
-[tool.briefcase.app.helloworld.linux]
-requires = [
-    'toga-gtk>=0.3.0.dev18',
-]
-
-[tool.briefcase.app.helloworld.windows]
-requires = [
-    'toga-winforms>=0.3.0.dev18',
-]
-
-# Mobile deployments
-[tool.briefcase.app.helloworld.iOS]
-requires = [
-    'toga-iOS>=0.3.0.dev18',
-]
-
-[tool.briefcase.app.helloworld.android]
-requires = [
-    'toga-android>=0.3.0.dev18',
-]
+[tool.briefcase.app.click_button_receive_log.android]
 template = "https://github.com/beeware/briefcase-android-gradle-template"
 support_package = "https://github.com/paulproteus/Python-Android-support/releases/download/v0.6/3.7.zip"
