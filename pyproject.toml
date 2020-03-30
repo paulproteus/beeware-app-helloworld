@@ -18,4 +18,4 @@ requires = []
 
 [tool.briefcase.app.click_button_receive_log.android]
 template = "https://github.com/beeware/briefcase-android-gradle-template"
-support_package = "https://github.com/paulproteus/Python-Android-support/releases/download/v0.6/3.7.zip"
+support_package = "https://github.com/paulproteus/Python-Android-support-old/releases/download/v0.6/3.7.zip"
